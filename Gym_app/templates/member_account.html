@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Moj nalog
+{% endblock title %}
+
+
+{% block headline %}
+{% endblock headline %}
+
+
+{% block content %}
+
+<div class="my-5 mx-5">
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/profile.jpg' %}" class="img-fluid rounded-start" alt="...">
+            <p class="card-text ms-4"><small class="text-body-secondary">Član od 10.08.2023.</small></p>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-end">Jovana Jovanović</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">jodzi</li>
+                <li class="list-group-item">jovana@gmail.com</li>
+                <li class="list-group-item">060/123-456</li>
+                <li class="list-group-item"><i class="bi bi-gender-female"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-tshirt" style="color: gray;"></i>&nbsp;M</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Promena lozinke</a>
+                <a href="#" class="card-link">Obriši nalog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+<div class="my-3">
+
+    <table class="text-center table table-striped table-light table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="8"><h5>Pregled zakazanih termina</h5></th>
+            </tr>
+            <tr>
+                <th>Naziv treninga</th>
+                <th>Instruktor</th>
+                <th>Broj termina</th>
+                <th>Vrsta programa</th>
+                <th>Važi od</th>
+                <th>Važi do</th>
+                <th>Cena</th>
+                <th>Otkaži</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="#">Zumba</a></td>
+                <td><a href="#">Daca</a></td>
+                <td>12</td>
+                <td>grupni</td>
+                <td>13.08.2023.</td>
+                <td>12.09.2023.</td>
+                <td>3000</td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+
+            <tr>
+                <td><a href="#">Časovi samoodbrane</a></td>
+                <td><a href="#">Sale</a></td>
+                <td>4</td>
+                <td>individualni</td>
+                <td>13.08.2023.</td>
+                <td>26.08.2023.</td>
+                <td>6000</td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<br><br>
+
+{% endblock content %}

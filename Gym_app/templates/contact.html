@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Kontakt forma
+{% endblock title %}
+
+
+{% block headline %}
+    <div class="my-5 mx-5">
+        <h4>Kontak forma</h4>
+    </div>
+{% endblock headline %}
+
+
+{% block content %}
+
+<div class="row mx-5">
+
+    <div class="col-9" id="form">
+
+        <form class="mx-5">
+            <div class="form-group row position-relative">
+                <label for="name" class="col-sm-2 col-form-label">Ime</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row position-relative">
+                <label for="email" class="col-sm-2 col-form-label">Imejl</label>
+                <div class="col-sm-6">
+                    <input type="mail" class="form-control" id="email" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row position-relative">
+                <label for="subject" class="col-sm-2 col-form-label">Tema</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row position-relative">
+                <label for="message" class="col-sm-2 col-form-label">Tekst poruke</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="message" required>
+                </div>
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-secondary col-sm-8">POŠALJI &nbsp;PORUKU</button>
+            <br><br>
+        </form>
+    </div>
+
+    <div class="col-3" id="contact">
+        <h5>Radno vreme:</h5>
+        <hr>
+        <p>Ponedeljak - Subota: 07:00 - 23:00</p>
+        <p>Nedelja: 10:00 - 18:00</p>
+    </div>
+    
+</div>
+
+<br><br>
+
+{% endblock content %}

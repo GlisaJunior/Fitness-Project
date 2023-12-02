@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Moji treninzi
+{% endblock title %}
+
+
+{% block headline %}
+{% endblock headline %}
+
+
+{% block content %}
+
+<div class="my-5 mx-5">
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'images/profile.jpg' %}" class="img-fluid rounded-start" alt="...">
+            <p class="card-text ms-4"><small class="text-body-secondary">U timu od 10.08.2023.</small></p>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-end">Danica Daničić</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h5>Daca</h5></li>
+                <li class="list-group-item">daca@gmail.com</li>
+                <li class="list-group-item">063/123-456</li>
+              </ul>
+              <div class="card-body">
+                <p>Prosečna ocena &nbsp;&nbsp;&nbsp;
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="my-3">
+
+    <table class="text-center table table-striped table-light table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="8"><h5>Pregled zakazanih termina</h5></th>
+            </tr>
+            <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th>Naziv treninga</th>
+                <th>Grupa/Individualno</th>
+                <th>Ime polaznika</th>
+                <th>Otkaži</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>14.08.2023</td>
+                <td>10:00</td>
+                <td>Pilates</td>
+                <td>grupa</td>
+                <td></td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+
+            <tr>
+                <td>14.08.2023</td>
+                <td>19:00</td>
+                <td>Zumba</td>
+                <td>grupa</td>
+                <td></td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+
+            <tr>
+                <td>15.08.2023</td>
+                <td>18:00</td>
+                <td>Step aerobik</td>
+                <td>grupa</td>
+                <td></td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+
+            <tr>
+                <td>15.08.2023</td>
+                <td>19:00</td>
+                <td>Pilates</td>
+                <td>grupa</td>
+                <td></td>
+                <td><i class="btn bi bi-x-circle"></i></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<br><br>
+
+{% endblock content %}

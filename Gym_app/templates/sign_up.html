@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Registracija
+{% endblock title %}
+
+
+{% block headline %}
+    <div class="my-5 mx-5">
+        <h4>Registracija korisničkog naloga</h4>
+    </div>
+{% endblock headline %}
+
+
+{% block content%}
+
+    <div class="my-5 mx-5">
+
+        <form>
+            <div class="form-group row">
+                <div class="form-group col-sm-6">
+                    <label for="first_name">Ime<sup>*</sup></label>
+                    <input type="text" class="form-control" id="first_name" minlength="3" maxlength="20" required>
+                    <small id="name_error"></small>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label for="last_name">Prezime<sup>*</sup></label>
+                    <input type="text" class="form-control" id="last_name" minlength="3" maxlength="20" required>
+                    <small id="surname_error"></small>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <div class="form-group col-sm-6">
+                    <label for="email">Mejl<sup>*</sup></label>
+                    <input type="email" class="form-control" id="email" required>
+                    <small id="email_error"></small>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label for="phone">Telefon<sup>*</sup></label>
+                    <input type="tel" class="form-control" id="phone" required>
+                    <small id="phone_error"></small>
+                </div>               
+            </div>
+            <br>
+
+            <br>
+            <div class="form-group row">
+                <div class="form-group col-sm-4">
+                    <label for="username">Korisničko ime<sup>*</sup></label>
+                    <input type="text" class="form-control" id="username" maxlength="15" required>
+                </div>
+
+                <div class="form-group col-sm-4">
+                    <label for="password">Lozinka<sup>*</sup></label>
+                    <input type="password" class="form-control" id="password" minlength="8" maxlength="12" required>
+                </div>
+
+                <div class="form-group col-sm-4">
+                    <label for="pass_confirm">Potvrda lozinke<sup>*</sup></label>
+                    <input type="password" class="form-control" id="pass_confirm" required>
+                    <small id="pass_confirm_error"></small>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <legend class="col-form-label col-sm-1 pt-0">Pol</legend>
+
+                <div class="col-sm-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sex" id="female" value="female" checked>
+                        <label class="form-check-label" id="female" for="female"><i
+                                class="bi bi-gender-female"></i>&nbsp;&nbsp;Ženski</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sex" id="male" value="male">
+                        <label class="form-check-label" id="male" for="male"><i
+                                class="bi bi-gender-male"></i>&nbsp;&nbsp;Muški</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <label class="col-form-label col-sm-2" for="T_shirt">Majica</label>
+                    <select class="custom-select col-sm-2 w-50" id="T_shirt">
+                        <option selected>Izaberite veličinu</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-sm-4 ">
+                    <label class="btn" id="selfie" for="profile_img"><i
+                            class="bi bi-person-square"></i>&nbsp;&nbsp;&nbsp;Avatar</label>
+                    <input type="file" style="display: none;" class="form-control" id="profile_img" maxwidth="300px"
+                        maxheight="300px">
+                </div>
+            </div>
+
+            <br>
+            <small><sup>*</sup> obavezna polja</small>
+            <br><br>
+
+            <button type="button" class="col-sm-12 btn btn-secondary">REGISTRUJ SE</button>
+
+        </form>
+
+    </div>
+
+<br><br>
+
+{% endblock content%}

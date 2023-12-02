@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Treninzi
+{% endblock title %}
+
+
+{% block headline %}
+    <div class="my-5 mx-5">
+        <h4>Izbor treninga</h4>
+    </div>
+{% endblock headline %}
+
+
+{% block content %}
+
+    <div class="d-flex flex-wrap align-content-between justify-content-between">
+
+        <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/functional.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Funkcionalni trening</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+ 
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/zumba.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Zumba</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/kick_aerobics.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cardio boxing</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/tabata.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tabata</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/step_aerobics.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Step aerobik</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/pilates.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pilates</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/joga.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Joga</h5>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Više informacija</a>
+                <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+
+          <div class="card mx-4 my-3" style="width: 18rem;">
+            <img src="{% static 'images/qigong.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Zdravstveni Qigong</h5>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Više informacija</a>
+              <a href="#" class="card-link">Zakaži trening</a>
+            </div>
+          </div>
+    </div>
+
+    <br><br>
+    
+{% endblock content %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Prijava
+{% endblock title %}
+
+
+{% block headline %}
+    <div class="my-5 mx-5">
+        <h4>Prijava</h4>
+    </div>
+{% endblock headline %}
+
+
+{% block content%}
+
+    <div class="d-flex justify-content-center">
+
+        <form class="col-8">
+            
+            <div class="form-group row">
+                <label for="username" class="col-2 col-form-label">Korisničko ime</label>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="username">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="password" class="col-2 col-form-label">Lozinka</label>
+                <div class="col-6">
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+            <br><br>
+
+            <button type="button" class="col-8 btn btn-secondary">PRIJAVI SE</button>
+
+        </form>
+
+    </div>
+
+    <br><br>
+
+{% endblock content%}

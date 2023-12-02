@@ -1,0 +1,61 @@
+{% extends 'base_admin.html' %}
+{% load static %}
+
+
+{% block title %}
+    Pregled treninga
+{% endblock title %}
+
+
+{% block headline %}
+{% endblock headline %}
+
+
+{% block content %}
+
+<div class="my-3" class="admin_tables">
+
+    <div class="d-flex justify-content-end me-5 mb-3">
+        <button class="btn btn-secondary">Dodaj trening</button>
+    </div>
+
+    <table class="text-center table table-striped table-light table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="5"><h5>Pregled treninga</h5></th>
+            </tr>
+            <tr>
+                <th>Naziv treninga</th>
+                <th>Instruktor</th>
+                <th>Broj polaznika</th>
+                <th>Datum kreiranja</th>
+                <th>Obriši</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="#">Zumba</a></td>
+                <td>Daca</td>
+                <td>30</td>
+                <td>10.08.2023.</td>
+                <td><i class="btn btn-secondary bi bi-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td><a href="#">Joga</a></td>
+                <td>Ceca</td>
+                <td>45</td>
+                <td>10.08.2023.</td>
+                <td><i class="btn btn-secondary bi bi-trash"></i></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<br><br>
+
+{% endblock content %}

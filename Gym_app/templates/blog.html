@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Blog
+{% endblock title %}
+
+
+{% block headline %}
+    <div class="my-5 mx-5">
+        <h4>Fitnes teme</h4>
+    </div>
+{% endblock headline %}
+
+
+{% block content %}
+
+    <div class="d-flex justify-content-between mx-4">
+        <div class="card" style="width: 40rem;">
+            <img src="{% static 'images/nutrition.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Ishrana</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt dignissimos tempore accusamus quidem non nihil et, natus ea laudantium fuga beatae sed id minus ullam adipisci? Sint, repudiandae reiciendis.</p>
+            <a href="#" class="btn btn-secondary">Pročitaj ceo tekst</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 40rem;">
+            <img src="{% static 'images/cardio.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Kardio trening</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, incidunt dignissimos tempore accusamus quidem non nihil et, natus ea laudantium fuga beatae sed id minus ullam adipisci? Sint, repudiandae reiciendis.</p>
+            <a href="#" class="btn btn-secondary">Pročitaj ceo tekst</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+{% endblock content %}

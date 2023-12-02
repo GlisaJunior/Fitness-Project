@@ -1,0 +1,58 @@
+{% extends 'base_admin.html' %}
+{% load static %}
+
+
+{% block title %}
+    Pregled mejlova
+{% endblock title %}
+
+
+{% block headline %}
+{% endblock headline %}
+
+
+{% block content %}
+
+<div class="my-3" class="admin_tables">
+
+    <div class="d-flex justify-content-end me-5 mb-3">
+        <button class="btn btn-secondary">Nova poruka</button>
+    </div>
+
+    <table class="text-center table table-striped table-light table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="7"><h5>Pregled poruka</h5></th>
+            </tr>
+            <tr>
+                <th>Ime</th>
+                <th>Imejl</th>
+                <th>Tema</th>
+                <th>Tekst poruke</th>
+                <th>Datum</th>
+                <th>Odgovori</th>
+                <th>Obriši</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Petar</td>
+                <td>pera@yahoo.com</td>
+                <td>Cardio boxing</td>
+                <td>...</td>
+                <td>10.08.2023.</td>
+                <td><i class="btn btn-secondary bi bi-reply-fill"></i></td>
+                <td><i class="btn btn-secondary bi bi-trash"></i></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<br><br>
+
+{% endblock content %}

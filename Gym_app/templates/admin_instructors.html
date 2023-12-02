@@ -1,0 +1,66 @@
+{% extends 'base_admin.html' %}
+{% load static %}
+
+
+{% block title %}
+    Pregled instruktora
+{% endblock title %}
+
+
+{% block headline %}
+{% endblock headline %}
+
+
+{% block content %}
+<div class="my-3" id="admin_tables">
+
+    <div class="d-flex justify-content-end me-5 mb-3">
+        <button class="btn btn-secondary">Dodaj instruktora</button>
+    </div>
+
+    <table class="text-center table table-striped table-light table-hover">
+
+        <thead>
+            <tr>
+                <th colspan="7"><h5>Pregled instruktora</h5></th>
+            </tr>
+            <tr>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Profil</th>
+                <th>Imejl adresa</th>
+                <th>Telefon</th>
+                <th>Datum kreiranja</th>
+                <th>Obriši</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Danica</td>
+                <td>Daničić</td>
+                <td><a href="#">Daca</a></td>
+                <td>daca@gmail.com</td>
+                <td>063/123-456</td>
+                <td>10.08.2023.</td>
+                <td><i class="btn btn-secondary bi bi-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td>Đorđe</td>
+                <td>Đorđević</td>
+                <td><a href="#">Đole</a></td>
+                <td>djole@yahoo.com</td>
+                <td>064/123-456</td>
+                <td>10.08.2023.</td>
+                <td><i class="btn btn-secondary bi bi-trash"></i></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<br><br>
+
+{% endblock content %}

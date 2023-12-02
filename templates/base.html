@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <title>
+        {% block title %}
+            Title
+        {% endblock title %}
+    </title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon-32x32.png' %}">
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-auto d-block" href="{% url 'homepage' %}">
+        <img src="{% static 'images/fit_logo.png' %}" width="100" height="100" class="" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'workouts' %}">Treninzi</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'instructors' %}">Instruktori</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'timetable' %}">Raspored treninga</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'gym_and_more' %}">Dodatni sadržaji</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="webshop">E-prodavnica</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Kontakt</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-square"></i>&nbsp;Moj nalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'member_account' %}">Moj nalog</a></li>
+                  <li><a class="dropdown-item" href="{% url 'sign_up' %}">Registracija</a></li>
+                  <li><a class="dropdown-item" href="{% url 'log_in' %}">Prijava</a></li>
+                  <li><a class="dropdown-item" href="#">Odjava</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'instructor_profile' %}"><i class="bi bi-emoji-smile"></i>&nbsp;Instruktor</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill-gear"></i>&nbsp;Admin
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'admin_instructors' %}">Pregled instruktora</a></li>
+                  <li><a class="dropdown-item" href="{% url 'admin_workouts' %}">Pregled treninga</a></li>
+                  <li><a class="dropdown-item" href="{% url 'admin_members' %}">Pregled članova</a></li>
+                  <li><a class="dropdown-item" href="{% url 'admin_mailbox' %}">Pregled mejlova</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    {% block headline %}
+      Headline
+    {% endblock headline %}
+
+
+    {% block content%}
+      Content
+    {% endblock content%}
+
+
+    {% include "footer.html" %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
